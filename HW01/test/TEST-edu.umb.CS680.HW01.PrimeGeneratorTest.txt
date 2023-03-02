@@ -1,0 +1,8 @@
+Testcase: edu.umb.CS680.HW01.PrimeGeneratorTest
+Test: generatePrimesValid() took 18 milli sec(s)
+Test: main() took 0 milli sec(s)
+Test: generatePrimes100to100() took 5 milli sec(s)
+Test: generatePrimesNegative10toNegative100() took 1 milli sec(s)
+Test: generatePrimes100to10() took 0 milli sec(s)
+Test: generatePrimes10to100() took 0 milli sec(s)
+Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 38 milli sec(s)
