@@ -1,0 +1,11 @@
+Testcase: edu.umb.CS680.HW05.ModelABCTest
+Test: verifyingABCWithLogginIn() took 17 milli sec(s)
+Test: verifyingABCwithoutLogginIn() took 1 milli sec(s)
+Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 28 milli sec(s)
+------------- Standard Output ---------------
+User successfully Authenticated
+User is LoggedIn in the system
+printer Job done
+User successfully Authenticated
+User not LoggedIn in the system
+------------- ---------------- ---------------

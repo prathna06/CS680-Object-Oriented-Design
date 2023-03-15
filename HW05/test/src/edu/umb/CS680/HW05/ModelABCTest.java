@@ -8,7 +8,7 @@ public class ModelABCTest {
     @Test
     public void verifyingABCwithoutLogginIn(){
         String pwd = "pwd";
-        String username = "prathna06";
+        String username = "prathana6";
         User user = new User(username, pwd);
         SecurityContext ctx = new SecurityContext(user);
         PrintJobExecutor ModelABC= new ModelABC();
@@ -18,7 +18,7 @@ public class ModelABCTest {
     @Test
     public void verifyingABCWithLogginIn(){
         String pwd = "pwd";
-        String username = "prathna06";
+        String username = "prathana6";
         User user = new User(username, pwd);
         SecurityContext ctx = new SecurityContext(user);
         ctx.login(pwd);
