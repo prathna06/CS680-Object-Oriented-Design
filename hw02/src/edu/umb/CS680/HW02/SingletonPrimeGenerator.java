@@ -1,20 +1,25 @@
-package edu.umb.CS680.HW01;
+package edu.umb.CS680.HW02;
 import java.util.Iterator;
 import java.util.LinkedList;
 
 
-public class PrimeGenerator {
-	protected long from, to;
-	protected LinkedList<Long> primes = new LinkedList<Long>();
-
-	public PrimeGenerator(long from, long to){
-		if(from >= 1 && to > from){
-			this.from = from;
-			this.to = to;
+public class SingletonPrimeGenerator {
+	protected static long from, to;
+	protected  LinkedList<Long> primes = new LinkedList<Long>();
+	private static SingletonPrimeGenerator singleInstance = null;
+	public static synchronized SingletonPrimeGenerator getInstance(long _from,long _to){
+		if(singleInstance == null){
+			singleInstance = new SingletonPrimeGenerator();
+		}
+		if(_from >= 1 && _to > _from){
+			from = _from;
+			to = _to;
 		}else{
 			throw new RuntimeException("Wrong input values: from=" + from + " to=" + to);
 		}
+		return singleInstance;
 	}
+	
 	
 	public LinkedList<Long> getPrimes(){ return primes; };
 	
@@ -41,9 +46,10 @@ public class PrimeGenerator {
 			if( isPrime(n) ){ primes.add(n); }
         }
 	}
+
 	
 	public static void main(String[] args) {
-		PrimeGenerator gen = new PrimeGenerator(1, 100);
+		SingletonPrimeGenerator gen = new SingletonPrimeGenerator();
 		gen.generatePrimes();
 		LinkedList<Long> primes = gen.getPrimes();
 		Iterator<Long> it = primes.iterator();
