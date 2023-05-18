@@ -1,9 +1,12 @@
-package edu.umb.CS680.HW06;
-
+package edu.umb.CS680.HW08.fs;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import edu.umb.CS680.HW08.TestFixtureInitializer;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+import org.junit.jupiter.api.AfterEach;
 
 public class DirectoryTest {
 
@@ -28,14 +31,14 @@ FileSystem FS;
     }
 
     @Test
-    public void checkDirectoryRootTest(){
-        String[] expected = new String[]{"false","prjRoot", "0",null,String.valueOf(TestFixtureInitializer.ldt),"4","5"};
+    public void verifyEqualityForDirectoryRoot(){
+        String[] expected = new String[]{"false","prjRoot", "0",null,String.valueOf(TestFixtureInitializer.ldt),"5","5"};
         Directory actual = FS.getRootDirs().get(0);
         assertArrayEquals(expected, dirToStringArray(actual));
     }
   
     @Test
-    public void checkDirectorySrcTest () {
+    public void verifyEqualityForDirectorySrc () {
         String[] expected = new String[]{"false","src", "0","prjRoot",String.valueOf(TestFixtureInitializer.ldt),"2","2"};
         System.out.println(FS.getRootDirs().get(0).getSubDirectories());
         Directory actual = FS.getRootDirs().get(0).getSubDirectories().get(0);
@@ -44,23 +47,28 @@ FileSystem FS;
     }
 
     @Test
-    public void checkDirectoryLibTest (){
+    public void verifyEqualityForDirectoryLib (){
         String[] expected = new String[]{"false","lib", "0","prjRoot",String.valueOf(TestFixtureInitializer.ldt),"1","1"};
         Directory actual =FS.getRootDirs().get(0).getSubDirectories().get(1);
         assertArrayEquals(expected, dirToStringArray(actual));
     }
 
     @Test
-    public void checkDirectoryTest (){
+    public void verifyEqualityForDirectoryTest (){
         String[] expected = new String[]{"false","test", "0","prjRoot",String.valueOf(TestFixtureInitializer.ldt),"1","1"};
         Directory actual = FS.getRootDirs().get(0).getSubDirectories().get(2);
         assertArrayEquals(expected, dirToStringArray(actual));
     }
 
     @Test
-    public void checkDirectorytestSrcTest (){
+    public void verifyEqualityForDirectorytestSrc (){
         String[] expected = new String[]{"false","src", "0","test",String.valueOf(TestFixtureInitializer.ldt),"1","1"};
         Directory actual =FS.getRootDirs().get(0).getSubDirectories().get(2).getSubDirectories().get(0);
         assertArrayEquals(expected, dirToStringArray(actual));
     }
+
+@AfterEach
+public void tearDown(){
+    FS.resetFileSystem();
+}
 }

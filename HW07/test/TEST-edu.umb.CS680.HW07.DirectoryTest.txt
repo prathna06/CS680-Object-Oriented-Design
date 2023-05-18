@@ -1,10 +1,10 @@
 Testcase: edu.umb.CS680.HW07.DirectoryTest
 Test: verifyEqualityForDirectoryLib() took 21 milli sec(s)
 Test: verifyEqualityForDirectorySrc() took 1 milli sec(s)
-Test: verifyEqualityForDirectoryRoot() took 1 milli sec(s)
-Test: verifyEqualityForDirectoryTest() took 1 milli sec(s)
-Test: verifyEqualityForDirectorytestSrc() took 1 milli sec(s)
-Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 35 milli sec(s)
+Test: verifyEqualityForDirectoryRoot() took 0 milli sec(s)
+Test: verifyEqualityForDirectoryTest() took 0 milli sec(s)
+Test: verifyEqualityForDirectorytestSrc() took 0 milli sec(s)
+Tests run: 5, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 37 milli sec(s)
 ------------- Standard Output ---------------
-[edu.umb.CS680.HW07.Directory@6d4a65c6, edu.umb.CS680.HW07.Directory@aa004a0, edu.umb.CS680.HW07.Directory@4c98a6d5, edu.umb.CS680.HW07.Directory@6d4a65c6, edu.umb.CS680.HW07.Directory@aa004a0, edu.umb.CS680.HW07.Directory@4c98a6d5]
+[edu.umb.CS680.HW07.Directory@29fc1a2b, edu.umb.CS680.HW07.Directory@4d0b0fd4, edu.umb.CS680.HW07.Directory@7a24eb3, edu.umb.CS680.HW07.Directory@29fc1a2b, edu.umb.CS680.HW07.Directory@4d0b0fd4, edu.umb.CS680.HW07.Directory@7a24eb3]
 ------------- ---------------- ---------------

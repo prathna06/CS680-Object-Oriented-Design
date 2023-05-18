@@ -1,4 +1,4 @@
-package edu.umb.CS680.HW06;
+package edu.umb.CS680.HW08.fs;
 
 import java.time.LocalDateTime;
 
@@ -15,13 +15,13 @@ public abstract class FSElement {
         this.creationTime = creationTime;
     }
 
-    public Directory getParent(){ //--
+    public Directory getParent(){
         return this.parent;
     }
-    public String getName() { 
+    public String getName() {
         return this.name;
     }
-    public int getSize() { // 
+    public int getSize() {
         return this.size;
     }
     public LocalDateTime getCreationTime() {
@@ -32,39 +32,27 @@ public abstract class FSElement {
         this.name = name;
     }
 
-    public void setSize(int size) { // -- 
+    public void setSize(int size) {
+        if(isDirectory()){
+            this.size = 0;
+        }
+        else{
             this.size = size;
+        }
 
     }
-
     public void setCreationTime(LocalDateTime creationTime) {
         this.creationTime = creationTime;
     }
-
     public void setParent(Directory parent) {
         this.parent = parent;
     }
 
-    public abstract boolean isDirectory(); // --
+    public abstract boolean isDirectory();
 
-    public abstract boolean isFile(); 
+    public abstract boolean isFile();
 
-    public static void main(String[] args) {
-
-        LocalDateTime ldt = LocalDateTime.now();
-
-        Directory root = new Directory(null,"prjRoot", 0, ldt);
-        Directory src = new Directory(root,"src", 0, ldt);
-        Directory lib = new Directory(root,"lib", 0, ldt);
-        Directory test = new Directory(root,"test", 0, ldt);
-
-        root.appendChild(src);
-        root.appendChild(lib);
-        root.appendChild(test);
-
-        int count = root.countChildren();
-        System.out.println("Children count:"+count);
-    }
-
+    public abstract boolean isLink();
+    public abstract void accept(FSVisitor v);
 
 }

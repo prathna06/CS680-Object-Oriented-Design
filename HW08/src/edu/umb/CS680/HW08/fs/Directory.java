@@ -1,34 +1,34 @@
-package edu.umb.CS680.HW06;
+package edu.umb.CS680.HW08.fs;
+
 import java.time.LocalDateTime;
 import java.util.LinkedList;
 
-public class Directory extends FSElement{
+public class Directory extends FSElement {
 
     public LinkedList<FSElement> children = new LinkedList<FSElement>();
     public LinkedList<Directory> SubDirectories = new LinkedList<Directory>();
-    public LinkedList<File> Files =new LinkedList<File>();
+    public LinkedList<File> Files = new LinkedList<File>();
     public int totalSize;
-
 
     public Directory(Directory parent, String name, int size, LocalDateTime creationTime) { //constructor
         super(parent, name, 0, creationTime);
     }
 
-    public LinkedList<FSElement> getChildren() { //getter --
+    public LinkedList<FSElement> getChildren() { //getter
 
         return this.children;
     }
 
-    public LinkedList<Directory> getSubDirectories() { //getter  --
+    public LinkedList<Directory> getSubDirectories() { //getter
         for (FSElement fs : children) {
             if (fs.isDirectory()) {
                 SubDirectories.add((Directory) fs);
             }
-        } 
+        }
         return SubDirectories;
     }
 
-    public LinkedList<File> getFiles() { //getter --
+    public LinkedList<File> getFiles() { //getter
         for (FSElement fs : children) {
             if (fs.isFile()) {
                 Files.add((File) fs);
@@ -37,16 +37,15 @@ public class Directory extends FSElement{
         return Files;
     }
 
-    public void appendChild(FSElement child){ //public method --
+    public void appendChild(FSElement child){ //public method
             this.children.add(child);
     }
 
-    public int countChildren(){ //public method --
-
+    public int countChildren(){ //public method
         return this.children.size();
     }
 
-    public int getTotalSize() { //public method --
+    public int getTotalSize() { //public method
         totalSize=0;
         for (FSElement fse : children) {
             if (fse.isDirectory()) {
@@ -68,6 +67,19 @@ public class Directory extends FSElement{
     public boolean isFile() { //public method
 
         return false;
+    }
+
+    @Override
+    public boolean isLink() { //public method
+
+        return false;
+    }
+    @Override
+    public void accept(FSVisitor v) {
+        v.visit(this);
+        for(FSElement fse: children){
+            fse.accept(v);
+        }
     }
 
 
