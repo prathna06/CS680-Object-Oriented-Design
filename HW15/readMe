@@ -1,0 +1,22 @@
+Shopping Cart Application - Strategy Design Pattern
+This shopping cart application allows users to add items to their cart and apply different discount strategies to calculate the total price. The application supports three discount strategies: "Percentage Discount", "Fixed Amount Discount", and "No Discount".Users can switch between these strategies to see the discounted price for their items. 
+
+Implementation Details:
+The implementation consists of the following components:
+ DiscountStrategy (Interface): Defines the strategy interface that all discount strategies must implement.
+ PercentageDiscountStrategy : Applies a percentage discount to the total price.
+ FixedAmountDiscountStrategy : Applies a fixed amount discount to the total price.
+ NoDiscountStrategy : Applies no discount to the total price.
+ ShoppingCart : Manages the current discount strategy and calculates the total price based on the selected strategy.
+ Item: Represents an item with a name and price.
+ Main: Implements the main program to demonstrate the shopping cart application.
+
+Usage Instructions:
+To use the shopping cart application, follow these steps:
+1. Create items: Create instances of the Item class representing the items you want to add to the cart.
+2. Add items to the cart: Add the created items to a list representing the shopping cart.
+3. Calculate the total price: Use the calculateTotalPrice method to calculate the total price of the items.
+4. Set the discount strategy: Use the setDiscountStrategy method of the ShoppingCart class to set the desired discount strategy.
+5. Calculate the discounted price: Use the calculateTotalPrice method of the ShoppingCart class to calculate the total price with the selected discount strategy.
+6. Display the results: Print the total price with the applied discount to the console.
+
