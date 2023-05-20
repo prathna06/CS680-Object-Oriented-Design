@@ -1,0 +1,9 @@
+Testcase: edu.umb.CS680.HW12.ReverseAlphabeticalComparatorTest
+Test: Test_getSubDirectories() took 1 milli sec(s)
+Test: Test_getChildren() took 1 milli sec(s)
+Test: Test_getFiles() took 1 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 5 milli sec(s)
+------------- Standard Output ---------------
+[edu.umb.CS680.HW12.fs.Directory@3672276e, edu.umb.CS680.HW12.fs.Directory@4248b963, edu.umb.CS680.HW12.fs.Directory@7f08caf, edu.umb.CS680.HW12.fs.File@4defd42, edu.umb.CS680.HW12.fs.Link@2330e3e0]
+[edu.umb.CS680.HW12.fs.Directory@3672276e, edu.umb.CS680.HW12.fs.Directory@4248b963, edu.umb.CS680.HW12.fs.Directory@7f08caf, edu.umb.CS680.HW12.fs.File@4defd42, edu.umb.CS680.HW12.fs.Link@2330e3e0]
+------------- ---------------- ---------------

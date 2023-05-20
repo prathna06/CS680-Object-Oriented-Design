@@ -1,0 +1,9 @@
+Testcase: edu.umb.CS680.HW12.SizeComparatorTest
+Test: Test_getSubDirectories() took 1 milli sec(s)
+Test: Test_getChildren() took 1 milli sec(s)
+Test: Test_getFiles() took 1 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 4 milli sec(s)
+------------- Standard Output ---------------
+[edu.umb.CS680.HW12.fs.Directory@40e60ece, edu.umb.CS680.HW12.fs.Directory@3f9270ed, edu.umb.CS680.HW12.fs.Directory@3a230001, edu.umb.CS680.HW12.fs.File@5ac6c4f2, edu.umb.CS680.HW12.fs.Link@2aa6311a]
+[edu.umb.CS680.HW12.fs.Directory@40e60ece, edu.umb.CS680.HW12.fs.Directory@3f9270ed, edu.umb.CS680.HW12.fs.Directory@3a230001, edu.umb.CS680.HW12.fs.File@5ac6c4f2, edu.umb.CS680.HW12.fs.Link@2aa6311a]
+------------- ---------------- ---------------

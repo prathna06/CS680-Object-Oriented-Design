@@ -7,7 +7,10 @@ public class TestFixtureInitializer {
     public static FileSystem fileSystem = FileSystem.getFileSystem();
     public static LocalDateTime ldt = LocalDateTime.now();
     public static FileSystem createFS() {
-      
+        if(fileSystem != null){
+            fileSystem.resetFileSystem();
+            fileSystem = FileSystem.getFileSystem();
+        }
         var prjRoot = new Directory(null, "prjRoot", 0, ldt);
         var src = new Directory(prjRoot, "src", 0, ldt);
         var lib = new Directory(prjRoot, "lib", 0, ldt);

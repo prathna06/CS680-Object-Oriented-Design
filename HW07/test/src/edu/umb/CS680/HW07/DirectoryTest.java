@@ -30,7 +30,7 @@ FileSystem FS;
 
     @Test
     public void verifyEqualityForDirectoryRoot(){
-        String[] expected = new String[]{"false","prjRoot", "0",null,String.valueOf(TestFixtureInitializer.ldt),"5","5"};
+        String[] expected = new String[]{"false","prjRoot", "0",null,String.valueOf(TestFixtureInitializer.ldt),"5","6"};
         Directory actual = FS.getRootDirs().get(0);
         assertArrayEquals(expected, dirToStringArray(actual));
     }

@@ -1,0 +1,10 @@
+Testcase: edu.umb.CS680.HW12.fs.DirectoryTest
+Test: verifyEqualityForDirectoryBin() took 1 milli sec(s)
+Test: testGetTotalSizeforBin() took 2 milli sec(s)
+Test: verifyEqualityForDirectoryApps() took 0 milli sec(s)
+Test: verifyEqualityForDirectoryHome() took 0 milli sec(s)
+Test: verifyEqualityForDirectoryRoot() took 1 milli sec(s)
+Test: testGetTotalSizeforApps() took 0 milli sec(s)
+Test: testGetTotalSizeforRoot() took 1 milli sec(s)
+Test: testGetTotalSizeforhome() took 0 milli sec(s)
+Tests run: 8, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 9 milli sec(s)

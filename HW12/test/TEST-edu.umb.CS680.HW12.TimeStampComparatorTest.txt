@@ -1,0 +1,9 @@
+Testcase: edu.umb.CS680.HW12.TimeStampComparatorTest
+Test: Test_getSubDirectories() took 2 milli sec(s)
+Test: Test_getChildren() took 1 milli sec(s)
+Test: Test_getFiles() took 0 milli sec(s)
+Tests run: 3, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 4 milli sec(s)
+------------- Standard Output ---------------
+[edu.umb.CS680.HW12.fs.Directory@78525ef9, edu.umb.CS680.HW12.fs.Directory@2d0ecb24, edu.umb.CS680.HW12.fs.Directory@4d654825, edu.umb.CS680.HW12.fs.File@3bfc6a5e, edu.umb.CS680.HW12.fs.Link@51b35e4e]
+[edu.umb.CS680.HW12.fs.Directory@78525ef9, edu.umb.CS680.HW12.fs.Directory@2d0ecb24, edu.umb.CS680.HW12.fs.Directory@4d654825, edu.umb.CS680.HW12.fs.File@3bfc6a5e, edu.umb.CS680.HW12.fs.Link@51b35e4e]
+------------- ---------------- ---------------

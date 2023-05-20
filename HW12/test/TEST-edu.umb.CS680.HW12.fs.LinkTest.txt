@@ -1,0 +1,6 @@
+Testcase: edu.umb.CS680.HW12.fs.LinkTest
+Test: testTargetSizeforlinkD() took 0 milli sec(s)
+Test: testTargetSizeforlinkE() took 0 milli sec(s)
+Test: verifyEqualityForLinkD() took 1 milli sec(s)
+Test: verifyEqualityForLinkE() took 1 milli sec(s)
+Tests run: 4, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 4 milli sec(s)
