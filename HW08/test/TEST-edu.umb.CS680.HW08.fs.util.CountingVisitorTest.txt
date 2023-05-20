@@ -1,8 +1,0 @@
-Testcase: edu.umb.CS680.HW08.fs.util.CountingVisitorTest
-Test: testDirectoriesForLib() took 1 milli sec(s)
-Test: testFilesForRoot() took 1 milli sec(s)
-Test: testFilesForTest() took 0 milli sec(s)
-Test: testDirectoriesForRoot() took 0 milli sec(s)
-Test: testFilesForLib() took 0 milli sec(s)
-Test: testLinksForRoot() took 0 milli sec(s)
-Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 7 milli sec(s)

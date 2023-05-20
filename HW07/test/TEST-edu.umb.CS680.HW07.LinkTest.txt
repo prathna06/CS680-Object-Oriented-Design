@@ -1,4 +1,0 @@
-Testcase: edu.umb.CS680.HW07.LinkTest
-Test: testTargetSizeforlinkY() took 2 milli sec(s)
-Test: verifyEqualityForLinkY() took 2 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 4 milli sec(s)
