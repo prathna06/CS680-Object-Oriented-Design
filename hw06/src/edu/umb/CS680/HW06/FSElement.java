@@ -15,13 +15,13 @@ public abstract class FSElement {
         this.creationTime = creationTime;
     }
 
-    public Directory getParent(){ //--
+    public Directory getParent(){
         return this.parent;
     }
-    public String getName() { 
+    public String getName() {
         return this.name;
     }
-    public int getSize() { // 
+    public int getSize() {
         return this.size;
     }
     public LocalDateTime getCreationTime() {
@@ -32,7 +32,7 @@ public abstract class FSElement {
         this.name = name;
     }
 
-    public void setSize(int size) { // -- 
+    public void setSize(int size) {
             this.size = size;
 
     }
@@ -45,22 +45,22 @@ public abstract class FSElement {
         this.parent = parent;
     }
 
-    public abstract boolean isDirectory(); // --
+    public abstract boolean isDirectory();
 
-    public abstract boolean isFile(); 
+    public abstract boolean isFile();
 
     public static void main(String[] args) {
 
         LocalDateTime ldt = LocalDateTime.now();
 
-        Directory root = new Directory(null,"prjRoot", 0, ldt);
-        Directory src = new Directory(root,"src", 0, ldt);
+        Directory root = new Directory(null,"root", 0, ldt);
+        Directory Apps = new Directory(root,"Apps", 0, ldt);
         Directory lib = new Directory(root,"lib", 0, ldt);
-        Directory test = new Directory(root,"test", 0, ldt);
+        Directory home = new Directory(root,"home", 0, ldt);
 
-        root.appendChild(src);
+        root.appendChild(Apps);
         root.appendChild(lib);
-        root.appendChild(test);
+        root.appendChild(home);
 
         int count = root.countChildren();
         System.out.println("Children count:"+count);

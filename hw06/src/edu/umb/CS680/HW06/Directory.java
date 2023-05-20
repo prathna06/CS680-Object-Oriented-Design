@@ -14,12 +14,12 @@ public class Directory extends FSElement{
         super(parent, name, 0, creationTime);
     }
 
-    public LinkedList<FSElement> getChildren() { //getter --
+    public LinkedList<FSElement> getChildren() { //getter
 
         return this.children;
     }
 
-    public LinkedList<Directory> getSubDirectories() { //getter  --
+    public LinkedList<Directory> getSubDirectories() { //getter
         for (FSElement fs : children) {
             if (fs.isDirectory()) {
                 SubDirectories.add((Directory) fs);
@@ -28,7 +28,7 @@ public class Directory extends FSElement{
         return SubDirectories;
     }
 
-    public LinkedList<File> getFiles() { //getter --
+    public LinkedList<File> getFiles() { //getter
         for (FSElement fs : children) {
             if (fs.isFile()) {
                 Files.add((File) fs);
@@ -37,16 +37,16 @@ public class Directory extends FSElement{
         return Files;
     }
 
-    public void appendChild(FSElement child){ //public method --
+    public void appendChild(FSElement child){ //public method
             this.children.add(child);
     }
 
-    public int countChildren(){ //public method --
+    public int countChildren(){ //public method
 
         return this.children.size();
     }
 
-    public int getTotalSize() { //public method --
+    public int getTotalSize() { //public method
         totalSize=0;
         for (FSElement fse : children) {
             if (fse.isDirectory()) {
