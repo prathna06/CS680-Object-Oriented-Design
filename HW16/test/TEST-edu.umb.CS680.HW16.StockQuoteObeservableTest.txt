@@ -1,7 +1,7 @@
 Testcase: edu.umb.CS680.HW16.StockQuoteObeservableTest
-Test: STOCKTestwithLE took 6 milli sec(s)
+Test: STOCKTestwithLE took 5 milli sec(s)
 Test: TestQuoteChangeNotification1 took 0 milli sec(s)
-Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 12 milli sec(s)
+Tests run: 2, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 10 milli sec(s)
 ------------- Standard Output ---------------
 StockEvent TableChart Updated
 StockEvent ThreeDChart Updated
