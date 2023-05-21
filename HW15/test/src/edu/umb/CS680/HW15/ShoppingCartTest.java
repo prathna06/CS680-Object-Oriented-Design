@@ -7,7 +7,11 @@ import org.junit.Test;
 
 public class ShoppingCartTest {
 
-
+    /* public static void main(String[] args) {
+        testPercentageDiscountStrategy();
+        testFixedAmountDiscountStrategy();
+        testNoDiscountStrategy();
+    } */
     @Test
     public  void testPercentageDiscountStrategy() {
         // Create a shopping cart
