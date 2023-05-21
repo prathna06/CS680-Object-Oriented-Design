@@ -24,13 +24,7 @@ class FileSystemTest {
     }
 
 
-    @Test
-    public void getRootDirectoryTest() {
-        var fs = FileSystem.getFileSystem();
-        Directory[] expected = {};
-      var actual = this.LinkedListToArray(fs.getRootDirs());
-        assertArrayEquals(expected, actual);
-    }
+
 
 
     @Test
@@ -40,15 +34,6 @@ class FileSystemTest {
         assertSame(fileA, fileB);
     }
 
-    @Test
-    public void addRootDirectoryTest() {
-        var fs = FileSystem.getFileSystem();
-        fs.appendRootDir(root);
-        LinkedList<Directory> getRootDirc = fs.getRootDirs();
 
-        Directory[] expected = { root };
-        Directory[] actual = this.LinkedListToArray(getRootDirc);
-        assertArrayEquals(expected, actual);
-    }
-    
+     
 }

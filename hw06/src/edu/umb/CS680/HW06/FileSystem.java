@@ -20,10 +20,14 @@ public class FileSystem {
         return RootDirs;
     }
 
-    public void appendRootDir(Directory root){ //public method
+    public void appendRootDirs(Directory root){ //public method
 
         this.RootDirs.add(root);
     }
+    public void resetFileSystem(){
+        fileSystem = null;
+    }
+
 
 
 

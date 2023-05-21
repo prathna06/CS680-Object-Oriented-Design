@@ -1,11 +1,12 @@
-package edu.umb.CS680.HW12;
+package edu.umb.CS680.HW06;
 import java.time.LocalDateTime;
-import edu.umb.CS680.HW12.fs.*;
+import edu.umb.CS680.HW06.Directory;
+import edu.umb.CS680.HW06.*;
 public class TestFixtureInitializer {
 
     public static FileSystem fileSystem = FileSystem.getFileSystem();
     public static LocalDateTime ldt = LocalDateTime.now();
-   // public static Directory testSrc = null ;
+
     
     public static FileSystem createFS() {
         if(fileSystem != null){
@@ -22,7 +23,6 @@ public class TestFixtureInitializer {
         var c = new File(lib, "c", 1, ldt);
         var d = new File(testSrc, "d", 1, ldt);
         var x = new File(prjRoot, "x", 1, ldt);
-        var link_y = new Link(prjRoot, "y", 1, ldt, testSrc);
         testSrc.appendChild(d);
         test.appendChild(testSrc);
         lib.appendChild(c);
@@ -32,7 +32,6 @@ public class TestFixtureInitializer {
         prjRoot.appendChild(lib);
         prjRoot.appendChild(test);
         prjRoot.appendChild(x);
-        prjRoot.appendChild(link_y);
         fileSystem.appendRootDirs(prjRoot);
         return fileSystem;
 
